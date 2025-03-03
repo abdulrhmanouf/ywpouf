@@ -1,0 +1,146 @@
+body {
+    font-family: 'lemonada';
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/3a8adc8a-fe27-41c4-b4ce-da7a5c08630e.jfif);
+    animation: moveBackground 120s linear infinite; /* تحريك الخلفية */
+}
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.login-container {
+    perspective: 1000px;
+}
+
+.login-box {
+    width: 300px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* animation: rotate 10s infinite linear; */
+}
+
+.logo {
+    font-family: "Lora", serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.input-group label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.remember-me {
+    display: flex;
+    gap: 2px;
+    justify-content: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+.remember-me label {
+    color: #fff;
+    font-size: 12px;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #6a11cb;
+    font-size: 12px;
+}
+.forget-remember {
+    display: flex;
+    justify-content: space-between;
+}
+.forget-remember a{
+    color: #6a11cb;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+.forget-remember a:hover {
+    color: #2575fc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2575fc;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+.footer label {
+    color: #fff;
+}
+
+.footer a {
+    color: #6a11cb;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #2575fc;
+}

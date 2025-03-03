@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playwrite+VN:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>YWP Login</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="logo">
+                <h1>YWP</h1>
+            </div>
+            <form class="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" required>
+                    <label for="username">اسم المستخدم</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label for="password">الرقم السري</label>
+                </div>
+                <div class="forget-remember">
+                    <a href="forget.html" target="_blank" rel="noopener noreferrer">نسيت الرقم السري</a>
+                    <div class="remember-me">
+                        <label for="remember-me">تذكرني</label>
+                        <input type="checkbox" name="remember-me" id="remember-me">
+                    </div>
+                </div>
+                
+                <button type="submit">تسجيل الدخول</button>
+            </form>
+            <div class="footer">
+                <label for="sign-up">ليس لديك حساب؟</label>
+                <a href="signup.html" target="_blank" rel="noopener noreferrer">إنشاء حساب</a>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/login.js"></script>
+</body>
+</html>

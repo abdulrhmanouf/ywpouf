@@ -1,0 +1,91 @@
+body {
+    font-family: 'lemonada';
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/3a8adc8a-fe27-41c4-b4ce-da7a5c08630e.jfif);
+    animation: moveBackground 120s linear infinite; /* تحريك الخلفية */
+
+}
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.signup-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+button:hover {
+    background: #2575fc;
+    
+}
+
+p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+a {
+    color: #6a11cb;
+    text-decoration: none;
+    transition: 0.6s;
+}
+
+a:hover {
+    color: #2575fc;
+
+}
