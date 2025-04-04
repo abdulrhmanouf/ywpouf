@@ -1,0 +1,177 @@
+body {
+    font-family: 'Cairo';
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+h1 {
+    color: #007BFF;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    min-height: 70vh;
+}
+.container::before {
+    content: '';
+    background-image: url(../images/services-right-dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1136px;
+    height: 244px;
+    z-index: -1;
+}
+.container::after {
+    content: '';
+    background-image: url(../images/services-left-dec.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    bottom: -250px;
+    width: 261px;
+    height: 368px;
+    z-index: 0;
+}
+
+/* شاشات متوسطة (أجهزة لوحية) */
+@media (max-width: 1024px) {
+    .container::before {
+        width: 800px; /* تقليل حجم العنصر */
+        height: 170px;
+    }
+
+    .container::after {
+        width: 200px;
+        height: 280px;
+        bottom: -200px; /* تعديل الموضع */
+    }
+}
+
+/* شاشات صغيرة (هواتف محمولة) */
+@media (max-width: 768px) {
+    .container::before {
+        width: 500px; /* تقليل حجم العنصر أكثر */
+        height: 100px;
+    }
+
+    .container::after {
+        width: 150px;
+        height: 200px;
+        bottom: -150px; /* تعديل الموضع */
+    }
+}
+
+/* شاشات صغيرة جدًا (هواتف محمولة صغيرة) */
+@media (max-width: 480px) {
+    .container::before {
+        width: 300px; /* تقليل حجم العنصر إلى الحد الأدنى */
+        height: 60px;
+    }
+
+    .container::after {
+        width: 100px;
+        height: 150px;
+        bottom: -100px; /* تعديل الموضع */
+    }
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    animation: moved 5s linear infinite;
+    transition: .6s;
+}
+.card:hover {
+    transform:scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+
+}
+/* @keyframes moved {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(200%);
+    }
+    75% {
+        transform: translateX(400%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+} */
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #555;
+    font-size: 1em;
+}
+.card p:hover {
+    color: #007BFF;
+    cursor: pointer;
+}
+.card .price {
+    font-weight: bold;
+    color: #000;
+}
+
+.card button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+
+}
+.card a {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: .9em;
+    font-weight: 800;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+
+}
